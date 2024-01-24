@@ -1,18 +1,18 @@
-import './App.css';
-import Accordion from './component/accordion/Accordion';
-import AccordionTwo from './component/accordion/AccordionTwo';
-import RandomColor from './component/random-color/RandomColor';
+import React from 'react';
+import Accordion from './component/accordion/Accordion'
+import Star from './component/star-rating/StarRating';
 
-function App() {
+
+
+const App = () => {
+
   return (
-    <div className="App">
-     {/* <AccordionTwo/> */}
-     {/* <br /><br /> */}
-     {/* <Accordion/> */}
-     {/* <br /><br /> */}
-     <RandomColor/>
+    <div>
+      {/* <Accordion/> */}
+      {/* <StarRating/> */}
+      <Star/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
