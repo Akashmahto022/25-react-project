@@ -5,6 +5,8 @@ import ImageSlider from './component/image-slider/ImageSlider';
 import Counter from './component/counter-app/Counter';
 import LoadMoreData from './component/load-more-data/LoadMoreData'
 import ApiProject from './component/api-project/ApiProject';
+import TreeMenu from './component/tree-menu/TreeMenu';
+import { menu } from './component/tree-menu/data';
 
 
 const App = () => {
@@ -23,7 +25,8 @@ const App = () => {
       <h1>4 Counter App</h1>
       <Counter/> */}
       {/* <LoadMoreData/> */}
-      <ApiProject/>
+      {/* <ApiProject/> */}
+      <TreeMenu menus={menu}/>
       
     </div>
   )
