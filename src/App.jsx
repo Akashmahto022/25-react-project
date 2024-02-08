@@ -4,6 +4,7 @@ import Star from './component/star-rating/StarRating';
 import ImageSlider from './component/image-slider/ImageSlider';
 import Counter from './component/counter-app/Counter';
 import LoadMoreData from './component/load-more-data/LoadMoreData'
+import ApiProject from './component/api-project/ApiProject';
 
 
 const App = () => {
@@ -21,7 +22,8 @@ const App = () => {
       <br />
       <h1>4 Counter App</h1>
       <Counter/> */}
-      <LoadMoreData/>
+      {/* <LoadMoreData/> */}
+      <ApiProject/>
       
     </div>
   )

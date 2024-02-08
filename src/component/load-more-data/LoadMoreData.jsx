@@ -36,7 +36,7 @@ const LoadMoreData = () => {
   }, [products])
 
   if (loading) {
-    return <div>loading data please wait.</div>;
+    return <div>loading data please wait...</div>;
   }
 
   return (
@@ -49,7 +49,7 @@ const LoadMoreData = () => {
                 <p>{item.title}</p>
               </div>
             ))
-          : <div>hello Akash</div>}
+          : <div>There is an error with API. We are not able to fetch the data from api</div>}
       </div>
       <div>
         <button disabled={disableButton} onClick={()=> setCount(count + 1)} className="button-container">Load More Products</button>
