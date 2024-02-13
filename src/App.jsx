@@ -7,6 +7,7 @@ import LoadMoreData from './component/load-more-data/LoadMoreData'
 import ApiProject from './component/api-project/ApiProject';
 import TreeMenu from './component/tree-menu/TreeMenu';
 import { menu } from './component/tree-menu/data';
+import QrCodeGen from './component/qr-code-genretor/QrCodeGen';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       {/* <LoadMoreData/> */}
       {/* <ApiProject/> */}
       <TreeMenu menus={menu}/>
+      <QrCodeGen/>
       
     </div>
   )
