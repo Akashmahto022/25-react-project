@@ -17,8 +17,10 @@ const App = () => {
 
   return (
     <div>
+    <div style={{marginTop: '120px'}}>
       <h1>1 Image Slider</h1>
       <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={"10"}/>
+    </div>
       <br />
       <h1>2 Accordion</h1>
       <Accordion/>
@@ -42,8 +44,8 @@ const App = () => {
       <LightDark/>
       <h1>scroll bar</h1>
       <ScrollBar url={'https://dummyjson.com/products?limit=100'}/>
-      
     </div>
+      
   )
 }
 
