@@ -10,13 +10,14 @@ import { menu } from './component/tree-menu/data';
 import QrCodeGen from './component/qr-code-genretor/QrCodeGen';
 import ApiData from './component/api-data/ApiData';
 import LightDark from './component/light-dark-mode/LightDark';
+import ScrollBar from './component/scroll-bar/ScrollBar';
 
 
 const App = () => {
 
   return (
     <div>
-      <h1>1 Image Slider</h1>
+      {/* <h1>1 Image Slider</h1>
       <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={"10"}/>
       <br />
       <h1>2 Accordion</h1>
@@ -38,7 +39,9 @@ const App = () => {
       <h1>Api data</h1>
       <ApiData/>
       <h1>Switch Theme</h1>
-      <LightDark/>
+      <LightDark/> */}
+      <h1>scroll bar</h1>
+      <ScrollBar url={'https://dummyjson.com/products?limit=100'}/>
       
     </div>
   )
