@@ -11,13 +11,14 @@ import QrCodeGen from './component/qr-code-genretor/QrCodeGen';
 import ApiData from './component/api-data/ApiData';
 import LightDark from './component/light-dark-mode/LightDark';
 import ScrollBar from './component/scroll-bar/ScrollBar';
+import SideBar from './component/sidebar-menu/SideBar';
 
 
 const App = () => {
 
   return (
     <div>
-    <div style={{marginTop: '120px'}}>
+    {/* <div style={{marginTop: '120px'}}>
       <h1>1 Image Slider</h1>
       <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={"10"}/>
     </div>
@@ -43,7 +44,8 @@ const App = () => {
       <h1>Switch Theme</h1>
       <LightDark/>
       <h1>scroll bar</h1>
-      <ScrollBar url={'https://dummyjson.com/products?limit=100'}/>
+      <ScrollBar url={'https://dummyjson.com/products?limit=100'}/> */}
+      <SideBar/>
     </div>
       
   )
