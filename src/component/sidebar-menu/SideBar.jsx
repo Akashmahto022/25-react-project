@@ -34,7 +34,10 @@ const SideBar = () => {
   ];
   return (
     <div className=" flex">
-      <div style={{ width: isOpen ? "200px" : "50px" }} className="bg-slate-800 text-white p-2">
+      <div
+        style={{ width: isOpen ? "200px" : "50px" }}
+        className="bg-slate-800 text-white p-2"
+      >
         <div className="flex">
           <div style={{ display: isOpen ? "block" : "none" }}>
             <img
