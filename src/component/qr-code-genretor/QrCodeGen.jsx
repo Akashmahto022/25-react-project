@@ -21,7 +21,7 @@ const QrCodeGen = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
-          <button onClick={handleClick} disabled={!input}>
+          <button onClick={handleClick} disabled={!input} className="bg-blue-700 text-white hover:bg-black p-2 rounded">
             Generator
           </button>
         </div>

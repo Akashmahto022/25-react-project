@@ -4,14 +4,14 @@ import Modal from './Modal';
 const ModalTest = () => {
     const [showModalPopup, setShowModalPopup] = useState(false)
 
-    const handleClick = ()=>{
-        setShowModalPopup(!showModalPopup)
+    const onclose=()=>{
+      setShowModalPopup(false)
     }
 
   return (
     <div className='m-4'>
-      <button className='bg-blue-700 text-white hover:bg-black p-2 rounded' onClick={handleClick}>Open Modal</button>
-      {showModalPopup && <Modal/>}
+      <button className='bg-blue-700 text-white hover:bg-black p-2 rounded' onClick={()=>setShowModalPopup(!showModalPopup)}>Open Modal</button>
+      {showModalPopup && <Modal onclose={onclose}/>}
      </div>
   )
 }

@@ -26,9 +26,9 @@ const RandomColorGenerator = () => {
 
   return (
     <div style={{backgroundColor: color, height: "100vh"}}>
-        <button onClick={()=>setTypeOfColor('hex')}>Hex Color Geneator</button>
-        <button onClick={()=>setTypeOfColor('rgb')}>RGB Color Geneator</button>
-        <button onClick={typeOfColor === 'rgb' ? rgbRandomColorGenerator : hexRandomColorGenerator}>Click for Color Geneator</button>
+        <button className='bg-blue-700 text-white hover:bg-black p-2 rounded' onClick={()=>setTypeOfColor('hex')}>Hex Color Geneator</button>
+        <button className='bg-blue-700 text-white hover:bg-black p-2 rounded' onClick={()=>setTypeOfColor('rgb')}>RGB Color Geneator</button>
+        <button className='bg-blue-700 text-white hover:bg-black p-2 rounded' onClick={typeOfColor === 'rgb' ? rgbRandomColorGenerator : hexRandomColorGenerator}>Click for Color Geneator</button>
         <div>
             <h1>{color}</h1>
         </div>

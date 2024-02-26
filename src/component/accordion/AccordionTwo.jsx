@@ -24,7 +24,7 @@ const AccordionTwo = () => {
     <div>
       Accordion two
       <div>
-          <button onClick={()=>setEnableMultiSelection(true)}>
+          <button onClick={()=>setEnableMultiSelection(true)} className="bg-blue-700 text-white hover:bg-black p-2 rounded">
             MultiSelection
           </button>
         <div>

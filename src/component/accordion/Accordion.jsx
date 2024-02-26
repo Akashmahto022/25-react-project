@@ -25,7 +25,7 @@ const Accordion = () => {
 
   return (
     <div>
-      <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
+      <button onClick={() => setEnableMultiSelection(!enableMultiSelection)} className="bg-blue-700 text-white hover:bg-black p-2 rounded">
         MultiSelection
       </button>
       {data.map((dataItems) => (

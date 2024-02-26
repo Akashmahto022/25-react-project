@@ -27,9 +27,9 @@ const RandomColor = () => {
 
   return (
     <div style={{height: "100vh", backgroundColor: color }}>
-      <button onClick={()=>setTypeOfColor('hex')}>HEX Color</button>
-      <button onClick={()=> setTypeOfColor('rgb')}>RGB Color</button>
-      <button onClick={typeOfColor === "rgb" ? handleClickRgbColor : handleClickHexColor}>Generate Random Color</button>
+      <button className="bg-blue-700 text-white hover:bg-black p-2 rounded" onClick={()=>setTypeOfColor('hex')}>HEX Color</button>
+      <button className="bg-blue-700 text-white hover:bg-black p-2 rounded" onClick={()=> setTypeOfColor('rgb')}>RGB Color</button>
+      <button className="bg-blue-700 text-white hover:bg-black p-2 rounded" onClick={typeOfColor === "rgb" ? handleClickRgbColor : handleClickHexColor}>Generate Random Color</button>
       <div>
         <h1>{color}</h1>
       </div>
