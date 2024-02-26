@@ -52,7 +52,7 @@ const LoadMoreData = () => {
           : <div>There is an error with API. We are not able to fetch the data from api</div>}
       </div>
       <div>
-        <button disabled={disableButton} onClick={()=> setCount(count + 1)} className="button-container">Load More Products</button>
+        <button disabled={disableButton} onClick={()=> setCount(count + 1)} className="button-container bg-blue-700 p-4 rounded text-white hover:bg-black">Load More Products</button>
         {disableButton ? <p>You have reached to 100 products</p> : null}
       </div>
     </div>
