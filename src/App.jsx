@@ -15,12 +15,13 @@ import SideBar from './component/sidebar-menu/SideBar';
 import TabText from './component/custom-tabs/TabText';
 import Modal from './component/custom-modal-popup/Modal';
 import ModalTest from './component/custom-modal-popup/ModalTest';
+import GithubProfile from './component/github-profile-finder/GithubProfile';
 
 const App = () => {
 
   return (
     <div>
-    <div style={{marginTop: '120px'}}>
+    {/* <div style={{marginTop: '120px'}}>
       <h1>1 Image Slider</h1>
       <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={"10"}/>
     </div>
@@ -52,8 +53,9 @@ const App = () => {
       <h1>Tabs</h1>
       <TabText/>
       <h1>modal popup</h1>
-      <ModalTest/>
-
+      <ModalTest/> */}
+      <h1>Github user</h1>
+      <GithubProfile/>
     </div>
       
   )

@@ -6,8 +6,8 @@ const Modal = ({ onclose, heading = "Give your heading" }) => {
   const closepopup = (e) => {
     if (handleref.current === e.target) {
       
+      onclose();
     }
-    onclose();
   };
 
   return (
