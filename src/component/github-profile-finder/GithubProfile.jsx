@@ -4,7 +4,8 @@ import { useState } from "react";
 
 const GithubProfile = () => {
   const [userName, setUserName] = useState("Akashmahto022");
-  const [userData, setUserData] = useState([]);
+  const [userData, setUserData] = useState(null);
+
 
   async function fetchGithubUserData() {
     const response = await fetch(`https://api.github.com/users/${userName}`);
@@ -17,7 +18,7 @@ const GithubProfile = () => {
 
   useEffect(() => {
     fetchGithubUserData();
-  }, [handleSubmit]);
+  }, []);
 
   const handleSubmit = () => {
     fetchGithubUserData()
@@ -26,6 +27,7 @@ const GithubProfile = () => {
   return (
     <div className="flex justify-center items-center">
       <div>
+        <h1>Search Github profile with the username of github</h1>
         <div className="flex justify-center items-center m-2">
           <input
             name="search-by-username"
@@ -47,7 +49,7 @@ const GithubProfile = () => {
             <div>
               <div key={userData.node_id} className="">
                 <img src={userData.avatar_url} alt="" className=" rounded-full"/>
-                <a href={userData.html_url}><h1 className="flex items-center justify-center text-blue-800 hover:underline font-bold">{userData.name}</h1></a>
+                <a href={userData.html_url} target="blank"><h1 className="flex items-center justify-center text-blue-800 hover:underline font-bold">{userData.name}</h1></a>
                 <p className="flex items-center justify-center text-center">{userData.bio}</p>
                 <div>
 
