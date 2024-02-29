@@ -1,27 +1,28 @@
-import React from 'react';
-import Accordion from './component/accordion/Accordion'
-import Star from './component/star-rating/StarRating';
-import ImageSlider from './component/image-slider/ImageSlider';
-import Counter from './component/counter-app/Counter';
-import LoadMoreData from './component/load-more-data/LoadMoreData'
-import ApiProject from './component/api-project/ApiProject';
-import TreeMenu from './component/tree-menu/TreeMenu';
-import { menu } from './component/tree-menu/data';
-import QrCodeGen from './component/qr-code-genretor/QrCodeGen';
-import ApiData from './component/api-data/ApiData';
-import LightDark from './component/light-dark-mode/LightDark';
-import ScrollBar from './component/scroll-bar/ScrollBar';
-import SideBar from './component/sidebar-menu/SideBar';
-import TabText from './component/custom-tabs/TabText';
-import Modal from './component/custom-modal-popup/Modal';
-import ModalTest from './component/custom-modal-popup/ModalTest';
-import GithubProfile from './component/github-profile-finder/GithubProfile';
+import React from "react";
+import Accordion from "./component/accordion/Accordion";
+import Star from "./component/star-rating/StarRating";
+import ImageSlider from "./component/image-slider/ImageSlider";
+import Counter from "./component/counter-app/Counter";
+import LoadMoreData from "./component/load-more-data/LoadMoreData";
+import ApiProject from "./component/api-project/ApiProject";
+import TreeMenu from "./component/tree-menu/TreeMenu";
+import { menu } from "./component/tree-menu/data";
+import QrCodeGen from "./component/qr-code-genretor/QrCodeGen";
+import ApiData from "./component/api-data/ApiData";
+import LightDark from "./component/light-dark-mode/LightDark";
+import ScrollBar from "./component/scroll-bar/ScrollBar";
+import SideBar from "./component/sidebar-menu/SideBar";
+import TabText from "./component/custom-tabs/TabText";
+import Modal from "./component/custom-modal-popup/Modal";
+import ModalTest from "./component/custom-modal-popup/ModalTest";
+import GithubProfile from "./component/github-profile-finder/GithubProfile";
+import Register from "./component/ai-code/RegisterPageWithAi";
+import AccordionRevise from "./component/accordion/AccordionRevise";
 
 const App = () => {
-
   return (
     <div>
-    {/* <div style={{marginTop: '120px'}}>
+      {/* <div style={{marginTop: '120px'}}>
       <h1>1 Image Slider</h1>
       <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={"10"}/>
     </div>
@@ -54,11 +55,13 @@ const App = () => {
       <TabText/>
       <h1>modal popup</h1>
       <ModalTest/> */}
-      <h1>Github user</h1>
-      <GithubProfile/>
-    </div>
-      
-  )
-}
+      {/* <h1>Github user</h1>
+      <GithubProfile/> */}
 
-export default App
+      {/* <Register /> */}
+      <AccordionRevise/>
+    </div>
+  );
+};
+
+export default App;
