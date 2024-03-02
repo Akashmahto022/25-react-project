@@ -18,6 +18,7 @@ import ModalTest from "./component/custom-modal-popup/ModalTest";
 import GithubProfile from "./component/github-profile-finder/GithubProfile";
 import Register from "./component/ai-code/RegisterPageWithAi";
 import AccordionRevise from "./component/accordion/AccordionRevise";
+import AccordionPractice from "./component/accordion/AccordionPractice";
 
 const App = () => {
   return (
@@ -59,7 +60,8 @@ const App = () => {
       <GithubProfile/> */}
 
       {/* <Register /> */}
-      <AccordionRevise/>
+      {/* <AccordionRevise/> */}
+      <AccordionPractice/>
     </div>
   );
 };
