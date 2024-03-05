@@ -20,6 +20,7 @@ import Register from "./component/ai-code/RegisterPageWithAi";
 import AccordionRevise from "./component/accordion/AccordionRevise";
 import AccordionPractice from "./component/accordion/AccordionPractice";
 import AccordionPractice2 from "./component/accordion/AccordionPractice2";
+import SearchAutoComplete from "./component/search-autoComplete/SearchAutoComplete";
 
 const App = () => {
   return (
@@ -63,7 +64,8 @@ const App = () => {
       {/* <Register /> */}
       {/* <AccordionRevise/> */}
       {/* <AccordionPractice/> */}
-      <AccordionPractice2/>
+      {/* <AccordionPractice2/> */}
+      <SearchAutoComplete/>
     </div>
   );
 };
