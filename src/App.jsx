@@ -19,6 +19,7 @@ import GithubProfile from "./component/github-profile-finder/GithubProfile";
 import Register from "./component/ai-code/RegisterPageWithAi";
 import AccordionRevise from "./component/accordion/AccordionRevise";
 import AccordionPractice from "./component/accordion/AccordionPractice";
+import AccordionPractice2 from "./component/accordion/AccordionPractice2";
 
 const App = () => {
   return (
@@ -61,7 +62,8 @@ const App = () => {
 
       {/* <Register /> */}
       {/* <AccordionRevise/> */}
-      <AccordionPractice/>
+      {/* <AccordionPractice/> */}
+      <AccordionPractice2/>
     </div>
   );
 };
