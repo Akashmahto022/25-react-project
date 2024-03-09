@@ -21,6 +21,7 @@ import AccordionRevise from "./component/accordion/AccordionRevise";
 import AccordionPractice from "./component/accordion/AccordionPractice";
 import AccordionPractice2 from "./component/accordion/AccordionPractice2";
 import SearchAutoComplete from "./component/search-autoComplete/SearchAutoComplete";
+import YourMayAlsoLike from "./component/image-slider/YourMayAlsoLike";
 
 const App = () => {
   return (
@@ -57,15 +58,17 @@ const App = () => {
       <h1>Tabs</h1>
       <TabText/>
       <h1>modal popup</h1>
-      <ModalTest/> */}
-      {/* <h1>Github user</h1>
-      <GithubProfile/> */}
+      <ModalTest/>
+      <h1>Github user</h1>
+      <GithubProfile/>
 
-      {/* <Register /> */}
+      <Register />
       {/* <AccordionRevise/> */}
       {/* <AccordionPractice/> */}
       {/* <AccordionPractice2/> */}
-      <SearchAutoComplete/>
+      {/* <SearchAutoComplete/> */}
+
+      <YourMayAlsoLike/>
     </div>
   );
 };
