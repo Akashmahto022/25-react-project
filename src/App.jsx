@@ -22,6 +22,7 @@ import AccordionPractice from "./component/accordion/AccordionPractice";
 import AccordionPractice2 from "./component/accordion/AccordionPractice2";
 import SearchAutoComplete from "./component/search-autoComplete/SearchAutoComplete";
 import YourMayAlsoLike from "./component/image-slider/YourMayAlsoLike";
+import UseReducer from "./component/Use Reducer Hook/UseReducer";
 
 const App = () => {
   return (
@@ -68,7 +69,8 @@ const App = () => {
       {/* <AccordionPractice2/> */}
       {/* <SearchAutoComplete/> */}
 
-      <YourMayAlsoLike/>
+      {/* <YourMayAlsoLike/> */}
+      <UseReducer/>
     </div>
   );
 };
